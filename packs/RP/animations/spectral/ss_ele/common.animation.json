@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.ss_ele.scale_in": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [0, 18, 0], 
+						"0.5": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.5": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.ss_ele.scale_out": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 10,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 15, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.ss_ele.scale_out_evolve": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 15,
+			"bones": {
+				"root": {
+					"position": {
+						"1.5": [0, 0, 0],
+						"2.0": [0, 15, 0]
+					},
+					"scale": {
+						"1.5": [1, 1, 1],
+						"2.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.ss_ele.ele_pet.fainted_particle": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "fainted"
+				}
+			}
+		}
+	}
+}

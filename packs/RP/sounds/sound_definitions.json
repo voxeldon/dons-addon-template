@@ -1,0 +1,922 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "ss_ele.null": {
+            "category": "ui",
+            "sounds": [
+                {
+                    "name": "sounds/null"
+                }
+            ]
+        },
+        "ss_ele.battle.theme": {
+            "category": "music",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/battle_music",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.battle.loss": {
+            "category": "ui",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat_loss",
+                    "volume": 0.35
+                }
+            ]
+        },
+        "ss_ele.battle.win": {
+            "category": "ui",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat_win",
+                    "volume": 0.35
+                }
+            ]
+        },
+        "ss_ele.battle.run": {
+            "category": "ui",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat_run",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.egg.hatch": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/egg_hatch",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.egg.rocking": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/egg_rocking",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.capture_start": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_start",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_1": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_1",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_2": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_2",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_3": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_3",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_4": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_4",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_5": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_5",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_6": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_success_6",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_1_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_1",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_2_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_2",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_3_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_3",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_4_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_4",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_5_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_5",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.capture_crystal.cs_6_f": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/capture_fail_6",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.attack_hit": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/attack_hit",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.buff": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/buff",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.critical_hit": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/critical_hit",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.damage": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/damage",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.levelup": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/levelup",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.miss": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/miss",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.negative_status": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/negative_status",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.select": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/select",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.throw_capture_crystal": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/throw_capture_crystal",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.use_item": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/use_item",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.alter.stone_insert": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/stone_insert",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.alter.summon": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/altar_summon",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.dark.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/dark/dark_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.dark.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/dark/dark_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.water.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/water/water_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.water.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/water/water_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.earth.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/earth/earth_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.earth.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/earth/earth_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.electric.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/electric/electric_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.electric.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/electric/electric_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.enigma.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/enigma/enigma_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.enigma.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/enigma/enigma_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.fae.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/fae/fae_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.fae.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/fae/fae_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.fire.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/fire/fire_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.fire.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/fire/fire_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.grass.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/grass/grass_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.grass.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/grass/grass_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.ice.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/ice/ice_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.ice.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/ice/ice_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.light.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/light/light_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.light.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/light/light_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.normal.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/normal/normal_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.normal.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/normal/normal_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.poison.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/poison/poison_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.poison.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/poison/poison_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.spirit.melee": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/spirit/spirit_melee_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.spirit.ranged": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/combat/spirit/spirit_ranged_atk",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.mine.amber_fragment_trigger": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/amber_fragment_trigger",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.mine.amethyst_fragment_trigger": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/amethyst_fragment_trigger",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.mine.diamond_fragment_trigger": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/diamond_fragment_trigger",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.mine.netherite_fragment_trigger": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/netherite_fragment_trigger",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.evolution": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/evolution_event",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.anukit.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/anukit_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.arephion.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/arephion_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.cassversary.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/cassversary_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.chickpea.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/chickpea_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.dreamweaver.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/dreamweaver_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.dunebask.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/dunebask_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.dusphynx.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/dusphynx_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.embull.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/embull_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.frosram.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/frosram_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.grumpig.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/grumpig_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.honbee.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/honbee_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.hugguin.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/hugguin_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.ignaja.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/ignaja_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.jackavolt.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/jackavolt_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.keewee.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/keewee_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.knitwisp.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/knitwisp_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.nelune.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/nelune_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.nixy.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/nixy_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.nymphy.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/nymphy_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.pangolacier.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/pangolacier_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.peabloom.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/peabloom_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.pharaox.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/pharaox_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.purrurn.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/purrurn_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.rablitz.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/rablitz_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.raptorch.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/raptorch_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.raptot.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/raptot_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.roarchief.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/roarchief_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.scorchian.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/scorchian_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.senbee.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/senbee_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.siltseal.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/siltseal_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.snolin.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/snolin_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.snugguin.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/snugguin_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.solphinx.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/solphinx_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.tropicoatl.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/tropicoatl_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.velgros.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/velgros_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.yarnmite.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/yarnmite_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.zairin.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/zairin_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.zenbee.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/zenbee_idle",
+                    "volume": 0.5
+                }
+            ]
+        },
+        "ss_ele.zipunny.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "name": "sounds/spectral/ss_ele/ele_pet/zipunny_idle",
+                    "volume": 0.5
+                }
+            ]
+        }
+    }
+}

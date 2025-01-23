@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.ss_ele.health_bar_main": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"healthbar_root": {
+					"rotation": [0, "q.rotation_to_camera(1) - q.body_y_rotation", 0],
+					"position": [0, "v.height_offset", 0]
+				},
+				"health": {
+    				"scale": ["1*(q.health-100)/v.max_health", 1, 1]
+				},
+				"health2": {
+				    "scale": ["1*(q.health-100)/v.max_health", 1, 1]
+				},
+				"level": {
+					"scale": ["1*v.experience/v.max_exp", 1, 1]
+				},
+				"level2": {
+					"scale": ["1*v.experience/v.max_exp", 1, 1]
+				}
+			},
+			"particle_effects": {
+				"0.0": [
+					{"effect": "level","locator": "level2","pre_effect_script": "v.lvl = q.has_property('spec:level') ? q.property('spec:level') : 1;"},
+					{"effect": "level","locator": "level","pre_effect_script": "v.lvl = q.has_property('spec:level') ? q.property('spec:level') : 1;"}
+				]
+			}
+		}
+	}
+}

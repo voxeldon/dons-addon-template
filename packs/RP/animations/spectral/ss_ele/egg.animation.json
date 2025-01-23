@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.ss_ele.egg.wobble": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"egg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [0, 0, -5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": {
+							"post": [0, 0, 5],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "wobble"
+				}
+			}
+		},
+		"animation.ss_ele.egg.hatch": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3,
+			"bones": {
+				"nest": {
+					"scale": {
+						"1.75": [1, 1, 1],
+						"1.95": [1.2, 1.2, 1.2],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"egg": {
+					"rotation": ["math.sin(q.anim_time*720)*10", 0, "math.sin(q.anim_time*720)*10"],
+					"scale": {
+						"1.75": [1, 1, 1],
+						"1.95": [1.2, 1.2, 1.2],
+						"2.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "hatch"
+				}
+			}
+		}
+	}
+}

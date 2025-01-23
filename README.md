@@ -7,7 +7,10 @@
 - TypeScript
 
 ### Getting Started
-To initialize the template, run the following command:
+To initialize the template, install npm libraries and run the following command:
+```
+npm install all
+```
 
 ```
 npm run init_addon

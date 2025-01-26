@@ -11,7 +11,8 @@
     "init_addon": "python tool/generate_manifest.py",
     "update_manifest": "python tool/update_manifest.py",
     "serialize_animations": "python tool/serialize_animations.py",
-    "serialize_audio": "python tool/serialize_audio.py"
+    "serialize_audio": "python tool/serialize_audio.py",
+    "new_entity": "python tool/generate_entity.py"
   },
   "keywords": [],
   "author": "unknown_author",

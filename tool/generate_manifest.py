@@ -5,6 +5,7 @@ import os
 from index import BP_PATH, RP_PATH
 from update_config_files import update_files
 from update_lang import update_lang
+from write_config import write_config
 
 AUTHOR = 'unknown_author'
 PACK_ID = 'addon_template'
@@ -113,5 +114,6 @@ print(f"Generated manifest files.")
 
 update_files(PACK_ID, AUTHOR)
 update_lang(f"{AUTHOR}'s {PACK_ID}")
+write_config(PACK_ID, VERSION, ENGINE_VERSION, API_VERSION, UI_API_VERSION)
 
 print(f"Addon ready!")

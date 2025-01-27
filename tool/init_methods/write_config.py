@@ -1,5 +1,8 @@
 import json
 import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from index import script_dir
 
 def write_config(AUTHOR, PACK_ID, VERSION, ENGINE_VERSION, API_VERSION, UI_API_VERSION):
     config = {
@@ -11,8 +14,6 @@ def write_config(AUTHOR, PACK_ID, VERSION, ENGINE_VERSION, API_VERSION, UI_API_V
         "ui_api_version": UI_API_VERSION
     }
     
-    # Get the directory of the current script
-    script_dir = os.path.dirname(os.path.abspath(__file__))
     # Define the path to the config.json file
     config_path = os.path.join(script_dir, 'config.json')
     

@@ -1,6 +1,8 @@
 import json
 import os
-from index import RP_PATH, ROOT_PATH, OUTPUT_PATH
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from ..index import RP_PATH, ROOT_PATH, OUTPUT_PATH
 JSON_PATH = os.path.join(RP_PATH, "sounds/sound_definitions.json")
 OUTPUT_FILE = os.path.join(OUTPUT_PATH, "sound_definitions_enum.ts")
 

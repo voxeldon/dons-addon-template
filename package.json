@@ -8,11 +8,12 @@
     "build_tsc": "tsc",
     "build_rego": "regolith run",
     "build": "npm run build_tsc && npm run build_rego",
-    "init_addon": "python tool/generate_manifest.py",
-    "update_manifest": "python tool/update_manifest.py",
-    "serialize_animations": "python tool/serialize_animations.py",
-    "serialize_audio": "python tool/serialize_audio.py",
-    "new_entity": "python tool/generate_entity.py"
+    "init_addon": "python tool/init_methods/init_addon.py",
+    "update_manifest": "python tool/util/update_manifest.py",
+    "serialize_animations": "python tool/util/serialize_animations.py",
+    "serialize_audio": "python tool/util/serialize_audio.py",
+    "new_entity": "python tool/util/generate_entity.py",
+    "update_sounds": "python tool/util/generate_sound_definitions.py"
   },
   "keywords": [],
   "author": "unknown_author",

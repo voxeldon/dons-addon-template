@@ -1,5 +1,7 @@
 import os
 import json
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from index import BP_PATH, RP_PATH
 
 BP_FILE_PATH = os.path.join(BP_PATH, 'manifest.json')

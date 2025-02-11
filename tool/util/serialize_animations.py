@@ -2,7 +2,7 @@ import os
 import json
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ..index import RP_PATH, ROOT_PATH, OUTPUT_PATH
+from index import RP_PATH, ROOT_PATH, OUTPUT_PATH
 
 def read_json_files(folder_path, output_folder):
     was_format_invalid = False

@@ -1,8 +1,9 @@
 import os
 import json
 import sys
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ..index import RP_PATH, PACK_ID
+from index import RP_PATH, PACK_ID
 
 RP_SOUND_DEFINITIONS_PATH = os.path.join(RP_PATH, 'sounds', 'sound_definitions.json')
 RP_SOUNDS_PATH = os.path.join(RP_PATH, 'sounds', PACK_ID)
@@ -33,35 +34,42 @@ def update_sound_definitions(files):
     with open(RP_SOUND_DEFINITIONS_PATH, 'r') as f:
         sound_definitions = json.load(f)
 
+    grouped_files = {}
     for file in files:
         file_name = os.path.splitext(os.path.basename(file))[0]
         subfolder_name = os.path.dirname(file)
         
         # Handle root folder separately
         if subfolder_name == '.' or subfolder_name == '':
-            key = f"{PACK_ID}.{file_name}"
+            key = f"{PACK_ID}.{file_name.rsplit('_', 1)[0]}"
         else:
             subfolder_name = subfolder_name.replace(os.sep, '_')
-            key = f"{PACK_ID}.{subfolder_name}_{file_name}"
+            key = f"{PACK_ID}.{subfolder_name}_{file_name.rsplit('_', 1)[0]}"
         
         # Remove extension from sound_path
         sound_path = f"sounds/{PACK_ID}/{os.path.splitext(file.replace(os.sep, '/'))[0]}"
 
+        if key not in grouped_files:
+            grouped_files[key] = []
+        grouped_files[key].append({"name": sound_path, "volume": 1.0})
+
+    for key, sounds in grouped_files.items():
         sound_definitions["sound_definitions"][key] = {
             "category": "neutral",
-            "sounds": [{"name": sound_path, "volume": 1.0}]
+            "sounds": sounds
         }
+        print(f"Added sound definition for key: {key}, sounds: {sounds}")
 
     with open(RP_SOUND_DEFINITIONS_PATH, 'w') as f:
         json.dump(sound_definitions, f, indent=4)
-
+    print(f"Sound definitions updated and written to {RP_SOUND_DEFINITIONS_PATH}")
 
 def main():
     ensure_sound_definitions_file()
     files = get_all_files(RP_SOUNDS_PATH)
     update_sound_definitions(files)
     for file in files:
-        print(f'Generated defenition: {file}')
+        print(f'Generated definition: {file}')
 
 if __name__ == "__main__":
     main()

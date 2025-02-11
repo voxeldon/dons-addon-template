@@ -12,6 +12,7 @@
     "update_manifest": "python tool/util/update_manifest.py",
     "serialize_animations": "python tool/util/serialize_animations.py",
     "serialize_audio": "python tool/util/serialize_audio.py",
+    "serialize_particles": "python tool/util/serialize_particles.py",
     "new_entity": "python tool/util/generate_entity.py",
     "update_sounds": "python tool/util/generate_sound_definitions.py"
   },
